@@ -78,7 +78,9 @@ def display_news(list_of_news, news_quantity):
 
 def run():
     st.title("InNews🇮🇳: A Summarised News📰")
-    image = Image.open(r'D:\Projects\NEWS SUMMARIZER PROJECT\newspaper.png')
+    image_path = 'newspaper.png'
+    image = Image.open(image_path)
+    st.image(image, caption='Newspaper')
 
     col1, col2, col3 = st.columns([3, 5, 3])
 
