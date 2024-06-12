@@ -48,8 +48,9 @@ def fetch_news_poster(poster_link):
         image = Image.open(io.BytesIO(raw_data))
         st.image(image, use_column_width=True)
     except:
-        image = Image.open(r'D:\Projects\NEWS SUMMARIZER PROJECT\no img.jpg')
-        st.image(image, use_column_width=True)
+        image_path = 'no img.jpg'
+        image = Image.open(image_path)
+        
 
 
 def display_news(list_of_news, news_quantity):
