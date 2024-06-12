@@ -5,7 +5,8 @@ from urllib.request import urlopen
 from newspaper import Article
 import io
 import nltk
-nltk.download('punkt')
+nltk.data.path.append('./nltk_data')
+
 
 st.set_page_config(page_title='InNews🇮🇳: A Summarised News📰 Portal', page_icon='./Meta/newspaper.ico')
 
