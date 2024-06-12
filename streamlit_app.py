@@ -80,7 +80,7 @@ def run():
     st.title("InNews🇮🇳: A Summarised News📰")
     image_path = 'newspaper.png'
     image = Image.open(image_path)
-    st.image(image, caption='Newspaper')
+    
 
     col1, col2, col3 = st.columns([3, 5, 3])
 
